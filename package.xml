@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>polygon_detect</name>
+  <version>0.0.0</version>
+  <description>The polygon_detect package is used to filter out red pixels from an image, using cvBridge and OpenCV. The basic aim was to detect a red rectangular obstacle and make the bot take some decision accordingly. The image is smoothened using a gaussian smoothing algorithm. The node publishes the edge lines of the red rectangular obstacle, over a topic 'rectangle_ends', using a basic weighted mean criterion.</description>
+
+  <maintainer email="saxena.vaibhav96@gmail.com">Vaibhav Saxena</maintainer>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  </export>
+</package>
